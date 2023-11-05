@@ -13,9 +13,41 @@
                 overflow: hidden;
             }
 
+            main{
+                display: grid;
+                grid-template-columns: 7fr 1fr;
+            }
+
             .graphic {
                 width: 100%;
                 height: 100vh;
+            }
+
+            .sheetbtn{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #F4F7FE;
+            }
+
+            .btn{
+                background-color: #56B6C4;
+                padding: 1rem;
+                border: none;
+                border-radius: 50px;
+            }
+
+            .btn:hover{
+                background-color: #06114F;
+                transition-duration: 1s;
+            }
+
+            .btn a{
+                color: white;
+                font-family: sans-serif;
+                font-weight: bold;
+                font-size: 18px;
+                text-decoration: none;
             }
 
         </style>
@@ -23,10 +55,16 @@
     </head>
 
     <body>
-        <div class="graphic">
 
-            <iframe title="AO reports" width="100%" height="100%" src="https://app.powerbi.com/view?r=eyJrIjoiYmE3NTc3ZGMtODY1NS00MWM2LTk0MTYtNmYzM2IyYzQyYTRlIiwidCI6ImY3NTYxNDc0LTYzZDEtNDM4Yi05M2ZiLTAyODM2YWUyMzc1ZiIsImMiOjl9&pageName=ReportSection" frameborder="0" allowFullScreen="true"></iframe>
-        </div>
+        <main>
+            <div class="graphic">
+                <iframe title="AO reports" width="100%" height="100%" src="https://app.powerbi.com/view?r=eyJrIjoiYmE3NTc3ZGMtODY1NS00MWM2LTk0MTYtNmYzM2IyYzQyYTRlIiwidCI6ImY3NTYxNDc0LTYzZDEtNDM4Yi05M2ZiLTAyODM2YWUyMzc1ZiIsImMiOjl9&pageName=ReportSection" frameborder="0" allowFullScreen="true"></iframe>
+            </div>
+
+            <div class="sheetbtn">
+                <button class="btn"><a href="https://docs.google.com/spreadsheets/d/1b1Db2ZzlgY57MNdUq4gp-8GIl-mQO9v1/edit?usp=sharing&ouid=113813798588514746306&rtpof=true&sd=true">Edit Data</a></button>
+            </div>
+        </main>
 
     </body>
 
