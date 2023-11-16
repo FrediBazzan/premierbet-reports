@@ -85,30 +85,4 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-}
-
-.countries-footer{
-    display: flex;
-    margin-top: 2rem;
-}
-
-.countries-footer ul{
-    list-style-type: none;
-}
-
-.countries-footer li{
-    margin-left: 0.2rem;
-}
-
-.countries-footer a{
-    color: white;
-    text-decoration: none;
-    background-color: #040c39;
-    padding: 0.5rem 1rem;
-}
-
-.countries-footer a:hover{
-    color: #56B6C4;
-    animation: 0.5s;
 }
