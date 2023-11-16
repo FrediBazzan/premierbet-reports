@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="/Images/favicon.png"> 
+        <link rel="stylesheet" href="/style-index.css">
+        <title>PREMIERBET | GA4 Reports</title>
+    </head>
+
+    <body>
+
+        <main>
+
+            <div class="logo">
+                <img src="/Images/premierbet-logo.svg" alt="PremierBet Logo">
+            </div>
+
+            <div class="country-selection">
+                <p>Select the country below and see the Google Analytics Reports:</p>
+                <select id="links">
+                    <option value="">Select Country:</option>
+                    <option value="/angola.html">Angola</option>
+                    <option value="/benin.html">Benin</option>
+                    <option value="cameroon.html">Cameroon</option>
+                    <option value="/chad.html">Chad</option>
+                    <option value="/congo-brazz.html">Congo Brazz</option>
+                    <option value="/dr-congo.html">DR Congo</option>
+                    <option value="/gambia.html">Gambia</option>
+                    <option value="/guinee.html">Guinée</option>
+                    <option value="/ivory-coast.html">Ivory Coast</option>
+                    <option value="/liberia.html">Liberia</option>
+                    <option value="/malawi.html">Malawi</option>
+                    <option value="/mali.html">Mali</option>
+                    <option value="/mozambique.html">Mozambique</option>
+                    <option value="/nairabet.html">Nairabet</option>
+                    <option value="/rwanda.html">Rwanda</option>
+                    <option value="/Senegal.html">Senegal</option>
+                    <option value="/sierra-leone.html">Sierra Leone</option>
+                    <option value="/tanzania.html">Tanzania</option>
+                    <option value="/togo.html">Togo</option>
+                    <option value="/zambia.html">Zambia</option>
+                    
+                </select>
+            
+                <button class="btn" onclick="redirect()">See GA4 Report</button>
+            </div>
+
+        </main>
+
+        <script>
+
+            function redirect() {
+            var select = document.getElementById("links");
+            var selectedOption = select.options[select.selectedIndex];
+            var selectedValue = selectedOption.value;
+
+            if (selectedValue) {
+                window.location.href = selectedValue;
+            }
+            }
+
+        </script>
+
+    </body>
+
+</html>

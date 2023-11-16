@@ -1,0 +1,102 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #06114F;
+}
+
+p{
+    font-size: 20px;
+    color: #56B6C4;
+}
+
+main{
+    padding-top: 15rem;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.country-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #56B6C4;
+}
+.country-selection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 15rem;
+}
+
+select{
+    padding: 0.5rem 5rem;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+}
+
+.btn{
+    background-color: #FAE100;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    color: black;
+}
+
+.btn:hover{
+    background-color: #56B6C4;
+    transition-duration: 0.5s;
+}
+
+.btn a{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+footer{
+    background-color: #06114F;
+    width: 100%;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.countries-footer{
+    display: flex;
+    margin-top: 2rem;
+}
+
+.countries-footer ul{
+    list-style-type: none;
+}
+
+.countries-footer li{
+    margin-left: 0.2rem;
+}
+
+.countries-footer a{
+    color: white;
+    text-decoration: none;
+    background-color: #040c39;
+    padding: 0.5rem 1rem;
+}
+
+.countries-footer a:hover{
+    color: #56B6C4;
+    animation: 0.5s;
+}

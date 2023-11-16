@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="/Images/favicon.png"> 
+        <link rel="stylesheet" href="/style.css">
+        <title>ANGOLA | GA4 Report</title>
+    </head>
+
+    <body>
+
+        <header class="vertical">
+
+            <div class="logo">
+                <img src="/Images/premierbet-logo.svg" alt="PremierBet Logo">
+            </div>
+
+            <div class="country-name">
+                <h1>Angola</h1>
+            </div>
+
+            <div class="country-selection">
+                <select id="links">
+                    <option value="">Select Country:</option>
+                    <option value="/angola.html">Angola</option>
+                    <option value="/benin.html">Benin</option>
+                    <option value="cameroon.html">Cameroon</option>
+                    <option value="/chad.html">Chad</option>
+                    <option value="/congo-brazz.html">Congo Brazz</option>
+                    <option value="/dr-congo.html">DR Congo</option>
+                    <option value="/gambia.html">Gambia</option>
+                    <option value="/guinee.html">Guinée</option>
+                    <option value="/ivory-coast.html">Ivory Coast</option>
+                    <option value="/liberia.html">Liberia</option>
+                    <option value="/malawi.html">Malawi</option>
+                    <option value="/mali.html">Mali</option>
+                    <option value="/mozambique.html">Mozambique</option>
+                    <option value="/nairabet.html">Nairabet</option>
+                    <option value="/rwanda.html">Rwanda</option>
+                    <option value="/Senegal.html">Senegal</option>
+                    <option value="/sierra-leone.html">Sierra Leone</option>
+                    <option value="/tanzania.html">Tanzania</option>
+                    <option value="/togo.html">Togo</option>
+                    <option value="/zambia.html">Zambia</option>
+                    
+                </select>
+            
+                <button class="btn" onclick="redirect()">Go</button>
+            </div>
+
+        </header>
+
+        <main>
+
+            <div class="graphic">
+                <iframe title="AO reports" width="100%" height="1500" src="https://app.powerbi.com/view?r=eyJrIjoiYmE3NTc3ZGMtODY1NS00MWM2LTk0MTYtNmYzM2IyYzQyYTRlIiwidCI6ImY3NTYxNDc0LTYzZDEtNDM4Yi05M2ZiLTAyODM2YWUyMzc1ZiIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
+            </div>
+
+        </main>
+
+        <footer>
+            <a href="https://drive.google.com/drive/folders/1Odt-mA38JEsV_N2jVfXBasyOz4enm2o4?usp=sharing"><button class="btn">Edit Data</button></a>
+
+            <ul class="countries-footer">
+                <li><a href="/angola.html">AO</a></li>
+                <li><a href="/benin.html">BJ</a></li>
+                <li><a href="/cameroon.html">CM</a></li>
+                <li><a href="/chad.html">TD</a></li>
+                <li><a href="/congo-brazz.html">CG</a></li>
+                <li><a href="/dr-congo.html">DRC</a></li>
+                <li><a href="/gambia.html">GM</a></li>
+                <li><a href="/guinee.html">GG</a></li>
+                <li><a href="/ivory-coast.html">IC</a></li>
+                <li><a href="/liberia.html">LR</a></li>
+                <li><a href="/malawi.html">MW</a></li>
+                <li><a href="/mali.html">ML</a></li>
+                <li><a href="/mozambique.html">MZ</a></li>
+                <li><a href="/nairabet.html">NB</a></li>
+                <li><a href="/rwanda.html">RW</a></li>
+                <li><a href="/senegal.html">SN</a></li>
+                <li><a href="/sierra-leone.html">SL</a></li>
+                <li><a href="/tanzania.html">TZ</a></li>
+                <li><a href="/togo.html">TG</a></li>
+                <li><a href="/zambia.html">ZM</a></li>
+            </ul>
+        </footer>
+
+        <script>
+
+            function redirect() {
+            var select = document.getElementById("links");
+            var selectedOption = select.options[select.selectedIndex];
+            var selectedValue = selectedOption.value;
+
+            if (selectedValue) {
+                window.location.href = selectedValue;
+            }
+            }
+
+        </script>
+
+    </body>
+
+</html>
