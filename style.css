@@ -17,9 +17,6 @@ h1{
     width: 100%;
     background-color: #06114F;
     padding: 1rem;
-    position: fixed;
-    top: 0;
-    left: 0;
 }
 
 .logo{
@@ -53,7 +50,6 @@ select{
 .graphic {
     height: 100%;
     width: 100%;
-    margin-top: 2rem;
 }
 
 .btn{
